@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import writing from './writing.jpg'
+import writing from '../assets/writing.jpg'
 import Fade from 'react-reveal/Fade'
 import { Button } from '@material-ui/core';
 

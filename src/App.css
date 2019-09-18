@@ -30,7 +30,7 @@
     width: 100%;
     position: absolute;
     z-index: -2;
-    background-image: url("coding.jpeg");
+    background-image: url("./assets/coding.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@
     width: 100%;
     position: absolute;
     z-index: -2;
-    background-image: url("stocks.jpg");
+    background-image: url("./assets/stocks.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
     width: 100%;
     position: absolute;
     z-index: -2;
-    background-image: url("classroom.jpg");
+    background-image: url("./assets/classroom.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@
     width: 100%;
     position: absolute;
     z-index: -2;
-    background-image: url("house.jpg");
+    background-image: url("./assets/house.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

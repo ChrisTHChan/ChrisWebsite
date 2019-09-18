@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import './App.css'
-import NavBar from './NavBar.js'
-import Home from './Home.js'
-import ResumePage from './ResumePage.js'
+import NavBar from './components/NavBar.js'
+import Home from './pages/Home.js'
+import ResumePage from './pages/ResumePage.js'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Projects from './Projects.js'
-import Blog from './Blog.js'
+import Projects from './pages/Projects.js'
+import Blog from './pages/Blog.js'
 
 class App extends Component {
   constructor() {

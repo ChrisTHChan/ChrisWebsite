@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
-import projects from './projects.jpg'
+import projects from '../assets/projects.jpg'
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 import styled, { css } from 'styled-components';

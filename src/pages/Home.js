@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import './App.css'
-import background from './background.png'
-import background1 from './background1.jpeg'
-import background2 from './background2.jpeg'
+import '../App.css'
+import background from '../assets/background.png'
+import background1 from '../assets/background1.jpeg'
+import background2 from '../assets/background2.jpeg'
 import { Button } from '@material-ui/core';
 import Fade from 'react-reveal/Fade'
 
