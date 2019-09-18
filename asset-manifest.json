@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ChrisChan/static/css/main.06fcf79d.chunk.css",
-    "main.js": "/ChrisChan/static/js/main.47ed4ed8.chunk.js",
-    "main.js.map": "/ChrisChan/static/js/main.47ed4ed8.chunk.js.map",
-    "runtime~main.js": "/ChrisChan/static/js/runtime~main.3282b399.js",
-    "runtime~main.js.map": "/ChrisChan/static/js/runtime~main.3282b399.js.map",
-    "static/js/2.8b0f7565.chunk.js": "/ChrisChan/static/js/2.8b0f7565.chunk.js",
-    "static/js/2.8b0f7565.chunk.js.map": "/ChrisChan/static/js/2.8b0f7565.chunk.js.map",
-    "index.html": "/ChrisChan/index.html",
-    "precache-manifest.b29cc68c51a747688d794a66987f04e3.js": "/ChrisChan/precache-manifest.b29cc68c51a747688d794a66987f04e3.js",
-    "service-worker.js": "/ChrisChan/service-worker.js",
-    "static/css/main.06fcf79d.chunk.css.map": "/ChrisChan/static/css/main.06fcf79d.chunk.css.map",
-    "static/media/background.png": "/ChrisChan/static/media/background.ca7160ef.png",
-    "static/media/background1.jpeg": "/ChrisChan/static/media/background1.4848c836.jpeg",
-    "static/media/background2.jpeg": "/ChrisChan/static/media/background2.81f47b24.jpeg",
-    "static/media/App.css": "/ChrisChan/static/media/stocks.54469eb3.jpg",
-    "static/media/projects.jpg": "/ChrisChan/static/media/projects.10a0b135.jpg",
-    "static/media/writing.jpg": "/ChrisChan/static/media/writing.00446a5d.jpg"
+    "main.css": "/ChrisWebsite/static/css/main.7e936af9.chunk.css",
+    "main.js": "/ChrisWebsite/static/js/main.bc608796.chunk.js",
+    "main.js.map": "/ChrisWebsite/static/js/main.bc608796.chunk.js.map",
+    "runtime~main.js": "/ChrisWebsite/static/js/runtime~main.b85534ed.js",
+    "runtime~main.js.map": "/ChrisWebsite/static/js/runtime~main.b85534ed.js.map",
+    "static/js/2.e04c7615.chunk.js": "/ChrisWebsite/static/js/2.e04c7615.chunk.js",
+    "static/js/2.e04c7615.chunk.js.map": "/ChrisWebsite/static/js/2.e04c7615.chunk.js.map",
+    "index.html": "/ChrisWebsite/index.html",
+    "precache-manifest.4faa794d49dabb65c326b73bfa072158.js": "/ChrisWebsite/precache-manifest.4faa794d49dabb65c326b73bfa072158.js",
+    "service-worker.js": "/ChrisWebsite/service-worker.js",
+    "static/css/main.7e936af9.chunk.css.map": "/ChrisWebsite/static/css/main.7e936af9.chunk.css.map",
+    "static/media/background.png": "/ChrisWebsite/static/media/background.ca7160ef.png",
+    "static/media/background1.jpeg": "/ChrisWebsite/static/media/background1.4848c836.jpeg",
+    "static/media/background2.jpeg": "/ChrisWebsite/static/media/background2.81f47b24.jpeg",
+    "static/media/App.css": "/ChrisWebsite/static/media/stocks.54469eb3.jpg",
+    "static/media/projects.jpg": "/ChrisWebsite/static/media/projects.10a0b135.jpg",
+    "static/media/writing.jpg": "/ChrisWebsite/static/media/writing.00446a5d.jpg"
   }
 }
