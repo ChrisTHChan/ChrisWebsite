@@ -1,33 +1,117 @@
-.App {
-  text-align: center;
+.landingDiv {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.landingDiv:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.skillsDiv {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.skillsDiv:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-image: url("coding.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stockDiv {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.stockDiv:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-image: url("stocks.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.classroomDiv {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.classroomDiv:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-image: url("classroom.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.4;
+}
+
+.houseDiv {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.houseDiv:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-image: url("house.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.4;
+}
+
+.navBarLink {
+    text-decoration: none;
+    color: white;
+}
+
+.navBarLink:hover {
+    color: lightskyblue;
+    cursor: pointer;
 }
