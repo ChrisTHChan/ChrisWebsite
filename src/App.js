@@ -3,7 +3,7 @@ import './App.css'
 import NavBar from './components/NavBar.js'
 import Home from './pages/Home.js'
 import ResumePage from './pages/ResumePage.js'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Projects from './pages/Projects.js'
 import Blog from './pages/Blog.js'
 
@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename='/'>
         <NavBar/>
         <Switch>
           <Route path="/" exact component={Home} />
@@ -25,7 +25,7 @@ class App extends Component {
           <Route path="/projects/" component={Projects} />
           <Route path="/blog/" component={Blog} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
