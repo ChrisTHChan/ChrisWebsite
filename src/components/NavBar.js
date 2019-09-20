@@ -81,6 +81,7 @@ class NavBar extends Component {
                         }}>
                         <div>
                             <img 
+                            className="menuIcon"
                             src={menuIcon} 
                             alt=''
                             style={{

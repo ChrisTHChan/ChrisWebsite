@@ -5,6 +5,7 @@ import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
 import styled, { css } from 'styled-components';
 import { Button } from '@material-ui/core';
+import MediaQuery from 'react-responsive';
 
 class Projects extends Component {
     constructor() {
@@ -18,7 +19,7 @@ class Projects extends Component {
         const width = '60vw', height='60vh';
         const Container = styled.div`
         border-radius: 15px;
-        padding: 15px;
+        padding: 10px;
         text-align: center;
         box-shadow: 0px 0px 30px black;
         background-color: white;
@@ -77,6 +78,7 @@ class Projects extends Component {
                 height: '100vh',
                 backgroundColor: 'black',
               }}>
+                
                 <Fade>
                     <div style ={{
                             backgroundImage: `url(${projects})`,
@@ -117,8 +119,7 @@ class Projects extends Component {
                                         done looking at a stock, decide how much of that stock you want to add to your portfolio and any
                                         notes you want to jot down about it, and throw it in! Watch as your portfolio value rises, and use
                                         the filter bar to look for stock's you don't want anymore to remove them as well!
-                                        This application was built HTML, CSS, JS, React, and AJAX.
-                                        </p>
+                                        This application was built HTML, CSS, JS, React, and AJAX.<br/>
                                         <Button 
                                         href='https://mrchrischan.github.io/StockViewer/'
                                         color="primary"
@@ -137,10 +138,11 @@ class Projects extends Component {
                                         }}>
                                         Show me the code!
                                         </Button>
+                                        </p>
                                     </div>
                                 </Slide>
                                 <Slide right>
-                                    <div>
+                                    <div >
                                         <h1 style={{
                                             fontSize: '30px',
                                             letterSpacing: '8px',
@@ -154,8 +156,7 @@ class Projects extends Component {
                                         (a side hustle if you will). Finding homework sheets and printing them for students was eventually
                                         proving itself to be a very costly task, both timewise and moneywise. I developed MathPractice
                                         to help streamline the process of homework distribution, as well as question production during
-                                        tutoring sessions and classes for primary school students looking for math help! This application was created with HTML, CSS, JS, and React.
-                                        </p>
+                                        tutoring sessions and classes for primary school students looking for math help! This application was created with HTML, CSS, JS, and React.<br/>
                                         <Button 
                                         href="https://mrchrischan.github.io/mathpracticereact/"
                                         color="primary"
@@ -174,6 +175,7 @@ class Projects extends Component {
                                         }}>
                                         Show me the code!
                                         </Button>
+                                        </p>
                                     </div>
                                 </Slide>
                                 <Slide right>
@@ -192,8 +194,7 @@ class Projects extends Component {
                                         the ability to create your own account, so you can sign in, and create a profile filled with multiple
                                         boards and posts of your own favorite home decor! You can also share your posts with other users, 
                                         as well as share posts of other users that you find have the same great taste as you! Star your favorite's
-                                        too! I worked with mainly React, React-Router, Material-UI, HTML, CSS, JS, AJAX, NodeJS, and ExpressJS.
-                                        </p>
+                                        too! I worked with mainly React, React-Router, Material-UI, HTML, CSS, JS, AJAX, NodeJS, and ExpressJS.<br/>
                                         <Button 
                                         color="primary"
                                         disabled
@@ -212,12 +213,14 @@ class Projects extends Component {
                                         }}>
                                         Show me the code!
                                         </Button>
+                                        </p>
                                     </div>
                                 </Slide>
                             </Carousel>
                         </Fade>
                     </div>
                 </Fade>
+                
             </div>
         )
     }
