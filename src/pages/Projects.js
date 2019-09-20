@@ -100,6 +100,7 @@ class Projects extends Component {
                         justifyContent: 'center',
                         alignItems: 'center',
                     }}>
+                        <MediaQuery minWidth={1105}>
                         <Fade top delay="500">
                             <Carousel>
                                 <Slide right>
@@ -218,9 +219,123 @@ class Projects extends Component {
                                 </Slide>
                             </Carousel>
                         </Fade>
+                        </MediaQuery>
+                        <MediaQuery maxWidth={1105}>
+                        <Fade top delay="500">
+                            <Carousel>
+                                <Slide right>
+                                    <div>
+                                        <h1 style={{
+                                            fontSize: '30px',
+                                            letterSpacing: '8px',
+                                            fontFamily: 'sans-serif',
+                                            fontWeight: '200',
+                                            lineHeight: '1.8em',
+                                            textTransform: 'uppercase',
+                                            }}>Stock Viewer</h1>
+                                        <div style={{
+                                            display: 'grid',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                        }}>
+                                            <Button 
+                                            href='https://mrchrischan.github.io/StockViewer/'
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            I want to see it!
+                                            </Button>
+                                            <Button
+                                            href='https://github.com/mrchrischan/StockViewer'
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            Show me the code!
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div >
+                                        <h1 style={{
+                                            fontSize: '30px',
+                                            letterSpacing: '8px',
+                                            fontFamily: 'sans-serif',
+                                            fontWeight: '200',
+                                            lineHeight: '1.8em',
+                                            textTransform: 'uppercase',
+                                            }}>Math Practice</h1>
+                                        <div style={{
+                                            display: 'grid',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                        }}>
+                                            <Button 
+                                            href="https://mrchrischan.github.io/mathpracticereact/"
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            I want to see it!
+                                            </Button>
+                                            <Button
+                                            href="https://github.com/mrchrischan/mathpracticereact"
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            Show me the code!
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </Slide>
+                                <Slide right>
+                                    <div>
+                                        <h1 style={{
+                                            fontSize: '30px',
+                                            letterSpacing: '8px',
+                                            fontFamily: 'sans-serif',
+                                            fontWeight: '200',
+                                            lineHeight: '1.8em',
+                                            textTransform: 'uppercase',
+                                            }}>Dream Home</h1>
+                                        <div style={{
+                                            display: 'grid',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                        }}>
+                                            <Button 
+                                            color="primary"
+                                            disabled
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            Site is coming soon!
+                                            </Button>
+                                            <Button
+                                            href="https://github.com/mrchrischan/Dream-Home"
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            Show me the code!
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </Slide>
+                            </Carousel>
+                        </Fade>
+                        </MediaQuery>
                     </div>
                 </Fade>
-                
             </div>
         )
     }
