@@ -73,7 +73,10 @@ class Projects extends Component {
         const Carousel = makeCarousel(CarouselUI);
         
         return(
-            <div>
+            <div style={{
+                height: '100vh',
+                backgroundColor: 'black',
+              }}>
                 <Fade>
                     <div style ={{
                             backgroundImage: `url(${projects})`,
@@ -84,7 +87,6 @@ class Projects extends Component {
                             backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
                             position: 'fixed',
-                            zIndex: '-1',
                     }}>
                     </div>
                     <div style ={{
@@ -107,7 +109,7 @@ class Projects extends Component {
                                             fontWeight: '200',
                                             lineHeight: '1.8em',
                                             textTransform: 'uppercase',
-                                            }}>StockViewer</h1>
+                                            }}>Stock Viewer</h1>
                                         <p style={{width: '45vw', margin: '0 auto',}}>
                                         StockViewer is exactly what it sounds like, it's a web application to assist you in your
                                         mission to scout for the best stock's for your portfolio! Search for stock tickers or names 
@@ -146,7 +148,7 @@ class Projects extends Component {
                                             fontWeight: '200',
                                             lineHeight: '1.8em',
                                             textTransform: 'uppercase',
-                                            }}>MathPractice</h1>
+                                            }}>Math Practice</h1>
                                         <p style={{width: '45vw', margin: '0 auto',}}>
                                         Back in university and after university I used to tutor students for a bit of extra money to keep me along 
                                         (a side hustle if you will). Finding homework sheets and printing them for students was eventually

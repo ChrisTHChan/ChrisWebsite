@@ -39,8 +39,6 @@ class App extends Component {
       <div style={{
         height: '100vh',
         backgroundColor: 'black',
-        width: '100vw',
-        maxWidth: '100%',
       }}>
         <Fade spy={this.state.backgroundImg} appear='true'>
           <div className="landingDiv"
@@ -115,7 +113,7 @@ class App extends Component {
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
                   lineHeight: '1.8em',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}>Who am I?</p>
                 <p>
                   I am a web developer based in Toronto. I graduated from the University of Waterloo with
@@ -160,7 +158,8 @@ class App extends Component {
                   fontWeight: '200',
                   lineHeight: '1.8em',
                   textTransform: 'uppercase',
-                }}>StockViewer</p>
+                  wordWrap: 'break-word'
+                }}>Stock Viewer</p>
                 <p style={{
                   color: 'white',
                 }}>
@@ -207,8 +206,9 @@ class App extends Component {
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
                   lineHeight: '1.8em',
-                  textTransform: 'uppercase'
-                }}>MathPractice</p>
+                  textTransform: 'uppercase',
+                  wordWrap: 'break-word'
+                }}>Math Practice</p>
                 <p>Back in university and after university I used to tutor students for a bit of extra money to keep me along 
                   (a side hustle if you will). Finding homework sheets and printing them for students was eventually
                   proving itself to be a very costly task, both timewise and moneywise. I developed MathPractice

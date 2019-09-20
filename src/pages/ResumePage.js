@@ -13,7 +13,10 @@ class ResumePage extends Component {
 
     render() {
         return(
-            <div>
+            <div style={{
+                height: '100vh',
+                backgroundColor: 'black',
+              }}>
                 <Fade>
                     <div style ={{
                         backgroundImage: `url(${writing})`,
@@ -24,7 +27,6 @@ class ResumePage extends Component {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
                         position: 'fixed',
-                        zIndex: '-1',
                     }}>
                     </div>
                     <div style ={{
@@ -48,7 +50,10 @@ class ResumePage extends Component {
                                 alignItems: 'center',
                             }}>
                                 <Fade delay="1200">
-                                    <div style={{textAlign: 'center'}}>
+                                    <div style={{
+                                        textAlign: 'center',
+                                        padding: '30px',
+                                        }}>
                                         <p style={{
                                             fontSize: '16px',
                                             letterSpacing: '4px',
