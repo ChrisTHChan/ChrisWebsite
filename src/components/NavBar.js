@@ -24,28 +24,44 @@ class NavBar extends Component {
         return (
             <div>
                 <Slide top when={this.state.menuState === 'open'}>
-                <div style={{
-                    position: 'fixed',
-                    height: '100vh',
-                    width: '100vw',
-                    maxWidth: '100%',
-                    backgroundColor: 'black',
-                    zIndex: '3',
-                    display: this.state.menuState === 'closed' ? 'none' : 'grid',
-                    gridTemplateRows: '2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    textAlign: 'center'
-                }}>
-                    <div></div>
-                    <p onClick={this.toggleMenu}><Link to='/' className="navBarLink">Home</Link></p>
-                    <p onClick={this.toggleMenu}><Link to='/projects/'className="navBarLink">Projects</Link></p>
-                    <p onClick={this.toggleMenu}><Link to='/resume/' className="navBarLink">Resume</Link></p>
-                    <p><a className="navBarLink" href="https://github.com/mrchrischan">GitHub</a></p>
-                    <p onClick={this.toggleMenu}><Link to='/blog/' className='navBarLink'>Blog</Link></p>
-                    <p className='navBarLink' onClick={this.toggleMenu}>X Close</p>
-                    <div></div>
-                </div>
+                    <div style={{
+                        position: 'fixed',
+                        height: '10vh',
+                        width: '100vw',
+                        maxWidth: '100%',
+                        backgroundColor: 'black',
+                        zIndex: '4',
+                        display: this.state.menuState === 'closed' ? 'none' : 'grid',
+                        justifyContent: 'end',
+                    }}>
+                        <div>
+                            <p
+                            className='closeMenu'
+                            onClick={this.toggleMenu}>X</p>
+                        </div>
+                    </div>
+                    <div style={{
+                        position: 'fixed',
+                        height: '100vh',
+                        width: '100vw',
+                        maxWidth: '100%',
+                        backgroundColor: 'black',
+                        zIndex: '3',
+                        display: this.state.menuState === 'closed' ? 'none' : 'grid',
+                        gridTemplateRows: '2fr 1fr 1fr 1fr 1fr 1fr 2fr',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        textAlign: 'center'
+                    }}>
+                        <div></div>
+                        <Link onClick={this.toggleMenu} to='/' className="navBarLink">Home</Link>
+                        <Link onClick={this.toggleMenu} to='/projects/'className="navBarLink">Projects</Link>
+                        <Link onClick={this.toggleMenu} to='/resume/' className="navBarLink">Resume</Link>
+                        <a onClick={this.toggleMenu} className="navBarLink" href="https://github.com/mrchrischan">GitHub</a>
+                        <Link onClick={this.toggleMenu} to='/contact/' className='navBarLink'>Contact</Link>
+                        {/* <p className='navBarLink' onClick={this.toggleMenu}>X Close</p> */}
+                        <div></div>
+                    </div>
                 </Slide>
                 <div style={{
                         display: 'grid',
@@ -61,7 +77,7 @@ class NavBar extends Component {
                     <div style={{
                         display: 'grid',
                         justifyContent: 'start',
-                        paddingLeft: '20px',
+                        paddingLeft: '15px',
                     }}>
                         <div>
                             <Link to='/'><img src={cimage} 
@@ -77,7 +93,7 @@ class NavBar extends Component {
                     <div style={{
                             display: 'grid',
                             justifyContent: 'end',
-                            paddingRight: '30px',
+                            paddingRight: '15px',
                         }}>
                         <div>
                             <img 

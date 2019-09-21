@@ -6,6 +6,15 @@
     outline: solid #f00 1px !important;
   } */
 
+  ::-webkit-scrollbar { 
+    display: none; 
+}
+
+.html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .landingDiv {
     min-height: 100vh;
     height: auto;
@@ -126,6 +135,8 @@
     padding: 5px 30px 5px 30px;
     font-family: sans-serif;
     font-size: 25px;
+    width: 10vw;
+    border: 1px solid black;
 }
 
 .navBarLink:hover {
@@ -133,6 +144,20 @@
     cursor: pointer;
     border: 1px solid white;
     border-radius: 10px;
+}
+
+.closeMenu {
+    font-size: 25px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 1000px;
+}
+
+.closeMenu:hover {
+    color: lightskyblue;
+    cursor: pointer;
 }
 
 .menuIcon:hover {

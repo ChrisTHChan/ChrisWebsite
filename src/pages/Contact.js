@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
 
-class Blog extends Component {
+class Contact extends Component {
     constructor() {
         super()
         this.state = {
@@ -27,4 +27,4 @@ class Blog extends Component {
     }
 }
 
-export default Blog;
+export default Contact;
