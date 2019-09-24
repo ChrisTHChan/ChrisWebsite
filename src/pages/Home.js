@@ -139,7 +139,7 @@ class App extends Component {
                   include back-end tools such as NodeJS, ExpressJS, and Python.
                 </p>
                 <p>
-                  This site itself is powered by HTML, CSS, React, React-Router, and React-Reveal.
+                  This site itself is powered by HTML, CSS, React, React-Router, React-Responsive and React-Reveal.
                 </p>
               </div>
               </Fade>
@@ -286,6 +286,72 @@ class App extends Component {
                 </Button>
               </div>
               </Fade>
+          </div>
+          <div className='contactDiv'>
+            <Fade top>
+            <div style={{
+              display: 'grid',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '200px',
+              width: '100%',
+              backgroundColor: 'lightgrey',
+              textAlign: 'center',
+              position: 'relative',
+              zIndex: '2',
+            }}>
+              <div>
+                <p style={{
+                  fontFamily: 'sans-serif',
+                  fontSize: '1.5em',
+                  letterSpacing: '3px',
+                  overflow: 'hidden', 
+                }}>
+                  Let me be the front end developer you need. Contact me at:
+                </p>
+                <p style={{
+                  fontFamily: 'sans-serif',
+                  fontSize: '1.1em',
+                  letterSpacing: '2px', 
+                }}>
+                  Tel: 519 497 9255
+                </p>
+                <p style={{
+                  fontFamily: 'sans-serif',
+                  fontSize: '1.1em',
+                  letterSpacing: '2px', 
+                }}>
+                  Email: chanchris1117@gmail.com
+                </p>
+              </div>
+            </div>
+            </Fade>
+            <Fade right delay='1000'>
+            <div style={{
+              height: '200px',
+              width: '200px',
+              backgroundColor: 'lightblue',
+              borderRadius: '150px',
+              position: 'absolute',
+              zIndex: '1',
+              top: '50%',
+              left: '5%',
+            }}>
+            </div>
+            </Fade>
+            <Fade left delay='1000'>
+            <div style={{
+              height: '200px',
+              width: '200px',
+              backgroundColor: 'lightblue',
+              borderRadius: '150px',
+              position: 'absolute',
+              zIndex: '1',
+              bottom: '50%',
+              right: '5%',
+            }}>
+            </div>
+            </Fade>
           </div>
       </div>
     )
