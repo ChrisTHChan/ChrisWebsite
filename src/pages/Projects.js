@@ -59,8 +59,6 @@ class Projects extends Component {
         <Container>
             <Children>
                 {children}
-                <Arrow onClick={handleClick} data-position={position - 1}>{'<'}</Arrow>
-                <Arrow right onClick={handleClick} data-position={position + 1}>{'>'}</Arrow>
             </Children>
             <Dots>
                 {Array(...Array(total)).map( (val, index) =>

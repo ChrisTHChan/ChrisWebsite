@@ -25,7 +25,6 @@ class App extends Component {
   }
 
   changeBackground = () => {
-    //not sure why this sometimes returns undefined
     let number = this.generateNumber()
     if (number === undefined) {
       this.changeBackground()
@@ -35,6 +34,30 @@ class App extends Component {
   }
 
   render() {
+    const whiteHomeTitleStyles = {
+      color: 'white',
+      fontSize: '2em',
+      letterSpacing: '8px',
+      fontFamily: 'sans-serif',
+      fontWeight: '200',
+      lineHeight: '1.8em',
+      textTransform: 'uppercase',
+    }
+
+    const blackHomeTitleStyles = {
+      fontSize: '2em',
+      letterSpacing: '8px',
+      fontFamily: 'sans-serif',
+      fontWeight: '200',
+      lineHeight: '1.8em',
+      textTransform: 'uppercase',
+    }
+
+    const centeringDiv = {
+      textAlign: 'center',
+      width: '70vw',
+    }
+
     return (
       <div style={{
         height: '100vh',
@@ -50,38 +73,20 @@ class App extends Component {
             backgroundPosition: 'center',
           }}>
             <Fade bottom duration="2000" delay='500'>
-              <div style={{
-                textAlign: 'center',
-              }}>
-                <h1 style={{
-                  color: 'white',
-                  fontSize: '30px',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase',
-                  }}>Chris Chan's Portfolio Site
+              <div style={centeringDiv}>
+                <h1 style={whiteHomeTitleStyles}>Chris Chan's Portfolio Site
+                </h1>
+                <h1 style={whiteHomeTitleStyles}>Welcome
                 </h1>
                 <h1 style={{
                   color: 'white',
-                  fontSize: '30px',
+                  fontSize: '1.2em',
                   letterSpacing: '8px',
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
                   lineHeight: '1.8em',
                   textTransform: 'uppercase'
-                  }}>Welcome
-                </h1>
-                <h1 style={{
-                  color: 'white',
-                  fontSize: '16px',
-                  letterSpacing: '4px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase'
-                }}>
+                  }}>
                   Don't like this background? 
                   <Button
                   variant="contained"
@@ -103,18 +108,8 @@ class App extends Component {
           </Fade >
           <div className='skillsDiv'>
             <Fade bottom duration="2000">
-              <div style={{
-                textAlign: 'center',
-                width: '70vw',
-              }}>
-                <p style={{
-                  fontSize: '30px',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase',
-                }}>Who am I?</p>
+              <div style={centeringDiv}>
+                <p style={blackHomeTitleStyles}>Who am I?</p>
                 <p>
                   I am a web developer based in Toronto. I graduated from the University of Waterloo with
                   a Bachelor of Sciences in the Honours Science program, specializing in mostly biology courses 
@@ -125,14 +120,7 @@ class App extends Component {
                   Beyond the professional side of things, I also enjoy pursuing my hobbies! Personal fitness,
                   personal finance, video games, and poker are all things I enjoy studying and doing in my spare time!
                 </p>
-                <p style={{
-                  fontSize: '30px',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase'
-                }}>What Skills Do I Have?</p>
+                <p style={blackHomeTitleStyles}>What Skills Do I Have?</p>
                 <p>I focus mainly on front-end development, but I am also knowledgeable about the back-end when 
                   it comes to web development. Technologies I am proficient at include HTML, CSS, JS-ES5/ES6
                   React, React-Router, Material-UI, RESTful APIs, and AJAX. Technologies I am knowledgeable with
@@ -146,20 +134,8 @@ class App extends Component {
           </div>
           <div className='stockDiv'>
             <Fade bottom duration="2000">
-              <div style={{
-                textAlign: 'center',
-                width: '70vw',
-              }}>
-                <p style={{
-                  color: 'white',
-                  fontSize: '30px',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase',
-                  wordWrap: 'break-word'
-                }}>Stock Viewer</p>
+              <div style={centeringDiv}>
+                <p style={whiteHomeTitleStyles}>Stock Viewer</p>
                 <p style={{
                   color: 'white',
                 }}>
@@ -196,19 +172,8 @@ class App extends Component {
           </div>
           <div className='classroomDiv'>
             <Fade bottom duration="2000">
-              <div style={{
-                textAlign: 'center',
-                width: '70vw',
-              }}>
-                <p style={{
-                  fontSize: '30px',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase',
-                  wordWrap: 'break-word'
-                }}>Math Practice</p>
+              <div style={centeringDiv}>
+                <p style={blackHomeTitleStyles}>Math Practice</p>
                 <p>Back in university and after university I used to tutor students for a bit of extra money to keep me along 
                   (a side hustle if you will). Finding homework sheets and printing them for students was eventually
                   proving itself to be a very costly task, both timewise and moneywise. I developed MathPractice
@@ -243,18 +208,8 @@ class App extends Component {
           </div>
           <div className='houseDiv'>
             <Fade bottom duration="2000">
-              <div style={{
-                textAlign: 'center',
-                width: '70vw',
-              }}>
-                <p style={{
-                  fontSize: '30px',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase'
-                }}>Dream Home</p>
+              <div style={centeringDiv}>
+                <p style={blackHomeTitleStyles}>Dream Home</p>
                 <p>
                   Dream Home is a Pinterest inspired site, made for mainly browsing home decor! This app was 
                   developed with a team, using GitHub workflow and agile developement principles. The app features

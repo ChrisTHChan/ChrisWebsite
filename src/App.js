@@ -7,8 +7,6 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Projects from './pages/Projects.js'
 import Contact from './pages/Contact.js'
 
-//Finish contact page
-//add a footer that will be a full screen essentially on homepage, with contact information, and footer links
 //make buttons smaller for mobile settings in project page
 //possibly create new menu for smaller vh's, or just make font smaller on smaller vh's
 
