@@ -3,6 +3,11 @@ import '../App.css'
 import background from '../assets/background.png'
 import background1 from '../assets/background1.jpeg'
 import background2 from '../assets/background2.jpeg'
+import coding from '../assets/coding.jpeg'
+import stocks from '../assets/stocks.jpg'
+import classroom from '../assets/classroom.jpg'
+import house from '../assets/house.jpg'
+import contact from '../assets/contact.jpg'
 import { Button } from '@material-ui/core';
 import Fade from 'react-reveal/Fade'
 
@@ -34,8 +39,8 @@ class App extends Component {
   }
 
   render() {
-    const whiteHomeTitleStyles = {
-      color: 'white',
+    
+    const blackHomeTitleStyles = {
       fontSize: '2em',
       letterSpacing: '8px',
       fontFamily: 'sans-serif',
@@ -44,13 +49,50 @@ class App extends Component {
       textTransform: 'uppercase',
     }
 
-    const blackHomeTitleStyles = {
-      fontSize: '2em',
-      letterSpacing: '8px',
-      fontFamily: 'sans-serif',
-      fontWeight: '200',
-      lineHeight: '1.8em',
-      textTransform: 'uppercase',
+    const whiteHomeTitleStyles = {...blackHomeTitleStyles}
+    whiteHomeTitleStyles.color = 'white'
+
+    const backgroundImageStyles = {
+      backgroundAttachment: 'fixed',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      minHeight: '100vh',
+      height: 'auto',
+      width: '100vw',
+      maxWidth: '100%',
+      display: 'grid',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }
+    
+    const homeBackgroundStyles = {...backgroundImageStyles}
+    homeBackgroundStyles.backgroundImage = `url(${this.state.backgroundImg})`
+
+    const skillsBackgroundStyles = {...backgroundImageStyles}
+    skillsBackgroundStyles.backgroundImage = `url(${coding})`
+
+    const stockBackgroundStyles = {...backgroundImageStyles}
+    stockBackgroundStyles.backgroundImage = `url(${stocks})`
+
+    const classroomBackgroundStyles = {...backgroundImageStyles}
+    classroomBackgroundStyles.backgroundImage = `url(${classroom})`
+
+    const houseBackgroundStyles = {...backgroundImageStyles}
+    houseBackgroundStyles.backgroundImage = `url(${house})`
+    
+    const contactBackgroundStyles = {...backgroundImageStyles}
+    contactBackgroundStyles.backgroundImage = `url(${contact})`
+
+    const opacityScreenCenteringText = {
+      minHeight: '100vh',
+      height: 'auto',
+      width: '100vw',
+      maxWidth: '100%',
+      display: 'grid',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'rgba(225, 225, 225, 0.8)',
     }
 
     const centeringDiv = {
@@ -64,14 +106,8 @@ class App extends Component {
         backgroundColor: 'black',
       }}>
         <Fade spy={this.state.backgroundImg} appear='true'>
-          <div className="landingDiv"
-          style={{
-            backgroundImage: `url(${this.state.backgroundImg})`,
-            backgroundAttachment: 'fixed',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-          }}>
+          <div
+          style={homeBackgroundStyles}>
             <Fade bottom duration="2000" delay='500'>
               <div style={centeringDiv}>
                 <h1 style={whiteHomeTitleStyles}>Chris Chan's Portfolio Site
@@ -106,7 +142,8 @@ class App extends Component {
               </Fade>
             </div>
           </Fade >
-          <div className='skillsDiv'>
+          <div style={skillsBackgroundStyles}>
+          <div style={opacityScreenCenteringText}>
             <Fade bottom duration="2000">
               <div style={centeringDiv}>
                 <p style={blackHomeTitleStyles}>Who am I?</p>
@@ -132,7 +169,8 @@ class App extends Component {
               </div>
               </Fade>
           </div>
-          <div className='stockDiv'>
+          </div>
+          <div style={stockBackgroundStyles}>
             <Fade bottom duration="2000">
               <div style={centeringDiv}>
                 <p style={whiteHomeTitleStyles}>Stock Viewer</p>
@@ -170,7 +208,8 @@ class App extends Component {
               </div>
               </Fade>
           </div>
-          <div className='classroomDiv'>
+          <div style={classroomBackgroundStyles}>
+          <div style={opacityScreenCenteringText}>
             <Fade bottom duration="2000">
               <div style={centeringDiv}>
                 <p style={blackHomeTitleStyles}>Math Practice</p>
@@ -205,8 +244,10 @@ class App extends Component {
                 </Button>
               </div>
               </Fade>
+          </div>    
           </div>
-          <div className='houseDiv'>
+          <div style={houseBackgroundStyles}>
+          <div style={opacityScreenCenteringText}>
             <Fade bottom duration="2000">
               <div style={centeringDiv}>
                 <p style={blackHomeTitleStyles}>Dream Home</p>
@@ -242,14 +283,15 @@ class App extends Component {
               </div>
               </Fade>
           </div>
-          <div className='contactDiv'>
+          </div>
+          <div style={contactBackgroundStyles}>
             <Fade top>
             <div style={{
               display: 'grid',
               justifyContent: 'center',
               alignItems: 'center',
               height: '200px',
-              width: '100%',
+              width: '100vw',
               backgroundColor: 'lightgrey',
               textAlign: 'center',
               position: 'relative',
@@ -281,7 +323,7 @@ class App extends Component {
               </div>
             </div>
             </Fade>
-            <Fade right delay='1000'>
+            {/* <Fade right delay='1000'>
             <div style={{
               height: '200px',
               width: '200px',
@@ -306,7 +348,7 @@ class App extends Component {
               right: '5%',
             }}>
             </div>
-            </Fade>
+            </Fade> */}
           </div>
       </div>
     )
