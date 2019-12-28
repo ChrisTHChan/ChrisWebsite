@@ -55,7 +55,7 @@ class App extends Component {
       fontSize: '2em',
       letterSpacing: '8px',
       fontFamily: 'sans-serif',
-      fontWeight: '200',
+      fontWeight: 'bold',
       lineHeight: '1.8em',
       textTransform: 'uppercase',
     }
@@ -123,7 +123,7 @@ class App extends Component {
         <Fade spy={this.state.backgroundImg} appear='true'>
           <div
           style={homeBackgroundStyles}>
-            <Fade bottom duration="2000" delay='500'>
+            <Fade duration="2000" delay='500'>
               <div style={centeringDiv}>
                 <h1 style={topPageWhiteTitlestyles}>Chris Chan's Portfolio Site
                 </h1>
@@ -135,7 +135,7 @@ class App extends Component {
           </Fade >
           <div style={skillsBackgroundStyles}>
           <div style={opacityScreenCenteringText}>
-            <Fade bottom duration="2000">
+            <Fade duration="2000">
               <div style={centeringDiv}>
                 <p style={blackHomeTitleStyles}>Who am I?</p>
                 <p>
@@ -150,9 +150,9 @@ class App extends Component {
                 </p>
                 <p style={blackHomeTitleStyles}>What Skills Do I Have?</p>
                 <p>I focus mainly on front-end development, but I am also knowledgeable about the back-end when 
-                  it comes to web development. Technologies I am proficient at include HTML, CSS, JS-ES5/ES6
-                  React, React-Router, Material-UI, RESTful APIs, and AJAX. Technologies I am knowledgeable with
-                  include back-end tools such as NodeJS, ExpressJS, Python, and postgreSQL.
+                  it comes to web development. Technologies I am proficient at include <span style={{fontWeight: 'bold'}}>HTML, CSS, JS-ES5/ES6
+                  React, React-Router, Material-UI, RESTful APIs, and AJAX</span>. Technologies I am knowledgeable with
+                  include back-end tools such as <span style={{fontWeight: 'bold'}}>NodeJS, ExpressJS, Python, and postgreSQL</span>.
                 </p>
                 <p>
                   This site itself is powered by HTML, CSS, React, React-Router, React-Responsive and React-Reveal.
@@ -162,7 +162,7 @@ class App extends Component {
           </div>
           </div>
           <div style={stockBackgroundStyles}>
-            <Fade bottom duration="2000">
+            <Fade duration="2000">
               <div style={centeringDiv}>
                 <p style={whiteHomeTitleStyles}>Stock Viewer</p>
                 <p style={{
@@ -201,7 +201,7 @@ class App extends Component {
           </div>
           <div style={classroomBackgroundStyles}>
           <div style={opacityScreenCenteringText}>
-            <Fade bottom duration="2000">
+            <Fade duration="2000">
               <div style={centeringDiv}>
                 <p style={blackHomeTitleStyles}>Math Practice</p>
                 <p>Back in university and after university I used to tutor students for a bit of extra money to keep me along 
@@ -239,7 +239,7 @@ class App extends Component {
           </div>
           <div style={houseBackgroundStyles}>
           <div style={opacityScreenCenteringText}>
-            <Fade bottom duration="2000">
+            <Fade duration="2000">
               <div style={centeringDiv}>
                 <p style={blackHomeTitleStyles}>Dream Home</p>
                 <p>
@@ -276,7 +276,7 @@ class App extends Component {
           </div>
           </div>
           <div style={contactBackgroundStyles}>
-            <Fade top>
+            <Fade>
             <div style={{
               display: 'grid',
               justifyContent: 'center',

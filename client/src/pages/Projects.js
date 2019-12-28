@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import projects from '../assets/projects.jpg'
 import makeCarousel from 'react-reveal/makeCarousel';
 import Slide from 'react-reveal/Slide';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Button } from '@material-ui/core';
 import MediaQuery from 'react-responsive';
 
@@ -31,24 +31,11 @@ class Projects extends Component {
         position: relative;
         height: ${height};
         `;
-        const Arrow = styled.div`
-        text-shadow: 1px 1px 1px #fff;
-        z-index: 100;
-        line-height: ${height};
-        text-align: center;
-        position: absolute;
-        top: 0;
-        width: 10%;
-        font-size: 3em;
-        cursor: pointer;
-        user-select: none;
-        ${props => props.right ? css`left: 90%;` : css`left: 0%;`}
-        `;
         const Dot = styled.span`
         font-size: 1.5em;
         cursor: pointer;
         text-shadow: 1px 1px 1px #fff;
-        user-select: none;
+        user-select: none;f
         `;
         const Dots = styled.span`
         text-align: center;
