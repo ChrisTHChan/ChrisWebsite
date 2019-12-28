@@ -3,6 +3,10 @@ import '../App.css'
 import background from '../assets/background.png'
 import background1 from '../assets/background1.jpeg'
 import background2 from '../assets/background2.jpeg'
+import background3 from '../assets/background3.jpg'
+import background4 from '../assets/background4.jpg'
+import background5 from '../assets/background5.jpg'
+import background6 from '../assets/background6.jpg'
 import coding from '../assets/coding.jpeg'
 import stocks from '../assets/stocks.jpg'
 import classroom from '../assets/classroom.jpg'
@@ -17,10 +21,16 @@ class App extends Component {
     super()
     this.state = {
       backgroundImg: background,
-      array: [background, background1, background2]
+      array: [background, background1, background2, background3, background4, background5, background6]
     }
   }
-  
+
+  componentDidMount() {
+    setInterval(() => {
+      this.changeBackground()
+    }, 7000)
+  }
+
   generateNumber = () => {
     let newBackgroundNo = Math.floor(Math.random() * Math.floor(this.state.array.length))
     if (this.state.backgroundImg === this.state.array[newBackgroundNo]) {
@@ -52,6 +62,10 @@ class App extends Component {
 
     const whiteHomeTitleStyles = {...blackHomeTitleStyles}
     whiteHomeTitleStyles.color = 'white'
+    
+    const topPageWhiteTitlestyles = {...blackHomeTitleStyles}
+    topPageWhiteTitlestyles.color = 'white'
+    topPageWhiteTitlestyles.fontSize = '2.5em'
 
     const backgroundImageStyles = {
       backgroundAttachment: 'fixed',
@@ -111,33 +125,9 @@ class App extends Component {
           style={homeBackgroundStyles}>
             <Fade bottom duration="2000" delay='500'>
               <div style={centeringDiv}>
-                <h1 style={whiteHomeTitleStyles}>Chris Chan's Portfolio Site
+                <h1 style={topPageWhiteTitlestyles}>Chris Chan's Portfolio Site
                 </h1>
-                <h1 style={whiteHomeTitleStyles}>Welcome
-                </h1>
-                <h1 style={{
-                  color: 'white',
-                  fontSize: '1.2em',
-                  letterSpacing: '8px',
-                  fontFamily: 'sans-serif',
-                  fontWeight: '200',
-                  lineHeight: '1.8em',
-                  textTransform: 'uppercase'
-                  }}>
-                  Don't like this background? 
-                  <Button
-                  variant="contained"
-                  className="changeIt"
-                  onClick={this.changeBackground}
-                  style={{
-                    border: '1px solid black',
-                    fontWeight: '200',
-                    lineHeight: '1.8em',
-                    letterSpacing: '4px',
-                  }}
-                  >
-                    Change it!
-                  </Button>
+                <h1 style={topPageWhiteTitlestyles}>Welcome
                 </h1>
               </div>
               </Fade>
@@ -162,7 +152,7 @@ class App extends Component {
                 <p>I focus mainly on front-end development, but I am also knowledgeable about the back-end when 
                   it comes to web development. Technologies I am proficient at include HTML, CSS, JS-ES5/ES6
                   React, React-Router, Material-UI, RESTful APIs, and AJAX. Technologies I am knowledgeable with
-                  include back-end tools such as NodeJS, ExpressJS, and Python.
+                  include back-end tools such as NodeJS, ExpressJS, Python, and postgreSQL.
                 </p>
                 <p>
                   This site itself is powered by HTML, CSS, React, React-Router, React-Responsive and React-Reveal.

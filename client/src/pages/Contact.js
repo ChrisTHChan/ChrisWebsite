@@ -46,7 +46,7 @@ class Contact extends Component {
             return this.setState({fillFieldsErrorSnackbar: true})
         } else {
             this.setState({loadingSnackbar: true})
-            fetch('http://localhost:3000/contact', {
+            fetch('https://nameless-lowlands-15111.herokuapp.com/contact', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
