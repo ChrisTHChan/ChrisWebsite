@@ -9,6 +9,7 @@ import background5 from '../assets/background5.jpg'
 import background6 from '../assets/background6.jpg'
 import coding from '../assets/coding.jpeg'
 import stocks from '../assets/stocks.jpg'
+import store from '../assets/store.jpg'
 import classroom from '../assets/classroom.jpg'
 import house from '../assets/house.jpg'
 import contact from '../assets/contact.jpg'
@@ -95,6 +96,9 @@ class App extends Component {
 
     const houseBackgroundStyles = {...backgroundImageStyles}
     houseBackgroundStyles.backgroundImage = `url(${house})`
+
+    const storeBackgroundStyles = {...backgroundImageStyles}
+    storeBackgroundStyles.backgroundImage = `url(${store})`
     
     const contactBackgroundStyles = {...backgroundImageStyles}
     contactBackgroundStyles.backgroundImage = `url(${contact})`
@@ -149,10 +153,10 @@ class App extends Component {
                   personal finance, video games, and poker are all things I enjoy studying and doing in my spare time!
                 </p>
                 <p style={blackHomeTitleStyles}>What Skills Do I Have?</p>
-                <p>I focus mainly on front-end development, but I am also knowledgeable about the back-end when 
-                  it comes to web development. Technologies I am proficient at include <span style={{fontWeight: 'bold'}}>HTML, CSS, JS-ES5/ES6
-                  React, React-Router, Material-UI, RESTful APIs, and AJAX</span>. Technologies I am knowledgeable with
-                  include back-end tools such as <span style={{fontWeight: 'bold'}}>NodeJS, ExpressJS, Python, and postgreSQL</span>.
+                  <p>I focus mainly on front-end development, but I am also knowledgeable about the back-end when 
+                    it comes to web development. Technologies I am proficient at include <span style={{fontWeight: 'bold'}}>HTML, CSS, JS-ES5/ES6
+                    React, React-Router, Material-UI, RESTful APIs, and AJAX</span>. Technologies I am knowledgeable with
+                    include back-end tools such as <span style={{fontWeight: 'bold'}}>NodeJS, ExpressJS, Python, and postgreSQL</span>.
                 </p>
                 <p>
                   This site itself is powered by HTML, CSS, React, React-Router, React-Responsive and React-Reveal.
@@ -236,6 +240,55 @@ class App extends Component {
               </div>
               </Fade>
           </div>    
+          </div>
+          <div style={storeBackgroundStyles}>
+          <div style ={{
+            backgroundColor: 'rgba(0,0,0,0.55)',
+            height: '100vh',
+            width: '100vw',
+            maxWidth: '100%',
+            display: 'grid',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <Fade duration="2000">
+              <div style={centeringDiv}>
+                <p style={whiteHomeTitleStyles}>Chris ECommerce</p>
+                <p style={{
+                  color: 'white',
+                }}>
+                  ChrisECommerce is a sample frame of an e-commerce website modeled after many other famous 
+                  e-commerce website giants currently out there already. It features a user authentication system,
+                  where you can sign up or sign in using your google account. The system then saves your information
+                  in a firebase data store, where you can then save your account information and relog at any time.
+                  It also features a fully functioning cart and payment system, where your interested cart items are
+                  stored in local storage, and won't disappear even on refresh of the site. The payment system 
+                  was built using the STRIPE API and given components.
+                </p>
+                <p style={{
+                  color: 'white',
+                }}>
+                  This application was built React, React-Router, Redux, Firebase, SCSS, and STRIPE API.
+                </p>
+                <Button
+                  href='https://chrisecommerce.herokuapp.com/'
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  I want to see it!
+                </Button>
+                <Button
+                  href='https://github.com/ChrisTHChan/E-Commerce-Website'
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  Show me the code!
+                </Button>
+              </div>
+              </Fade>
+          </div>
           </div>
           <div style={houseBackgroundStyles}>
           <div style={opacityScreenCenteringText}>
@@ -324,32 +377,6 @@ class App extends Component {
               </div>
             </div>
             </Fade>
-            {/* <Fade right delay='1000'>
-            <div style={{
-              height: '200px',
-              width: '200px',
-              backgroundColor: 'lightblue',
-              borderRadius: '150px',
-              position: 'absolute',
-              zIndex: '1',
-              top: '50%',
-              left: '5%',
-            }}>
-            </div>
-            </Fade>
-            <Fade left delay='1000'>
-            <div style={{
-              height: '200px',
-              width: '200px',
-              backgroundColor: 'lightblue',
-              borderRadius: '150px',
-              position: 'absolute',
-              zIndex: '1',
-              bottom: '50%',
-              right: '5%',
-            }}>
-            </div>
-            </Fade> */}
           </div>
       </div>
     )

@@ -2,7 +2,7 @@
   "name": "chriswebsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mrchrischan.github.io/ChrisWebsite",
+  "homepage": "https://christhchan.github.io/ChrisWebsite",
   "dependencies": {
     "@material-ui/core": "^4.4.2",
     "material-ui-icons": "^1.0.0-beta.36",

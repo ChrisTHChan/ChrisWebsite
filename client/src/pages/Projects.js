@@ -88,6 +88,45 @@ class Projects extends Component {
                         <MediaQuery minWidth={1105}>
                         <Fade top delay="500">
                             <Carousel>
+                            <Slide right>
+                                    <div>
+                                        <h1 style={{
+                                            fontSize: '30px',
+                                            letterSpacing: '8px',
+                                            fontFamily: 'sans-serif',
+                                            fontWeight: '200',
+                                            lineHeight: '1.8em',
+                                            textTransform: 'uppercase',
+                                            }}>Chris ECommerce</h1>
+                                        <p style={{width: '45vw', margin: '0 auto',}}>
+                                        ChrisECommerce is a sample frame of an e-commerce website modeled after many other famous 
+                                        e-commerce website giants currently out there already. It features a user authentication system,
+                                        where you can sign up or sign in using your google account. The system then saves your information
+                                        in a firebase data store, where you can then save your account information and relog at any time.
+                                        It also features a fully functioning cart and payment system, where your interested cart items are
+                                        stored in local storage, and won't disappear even on refresh of the site. The payment system 
+                                        was built using the STRIPE API and given components.<br/>
+                                        <Button 
+                                        href='https://chrisecommerce.herokuapp.com/'
+                                        color="primary"
+                                        variant='contained'
+                                        style={{
+                                            margin: '10px',
+                                        }}>
+                                        I want to see it!
+                                        </Button>
+                                        <Button
+                                        href='https://github.com/ChrisTHChan/E-Commerce-Website'
+                                        color="primary"
+                                        variant='contained'
+                                        style={{
+                                            margin: '10px',
+                                        }}>
+                                        Show me the code!
+                                        </Button>
+                                        </p>
+                                    </div>
+                                </Slide>
                                 <Slide right>
                                     <div>
                                         <h1 style={{
@@ -208,6 +247,42 @@ class Projects extends Component {
                         <MediaQuery maxWidth={1105}>
                         <Fade top delay="500">
                             <Carousel>
+                            <Slide right>
+                                    <div>
+                                        <h1 style={{
+                                            fontSize: '30px',
+                                            letterSpacing: '8px',
+                                            fontFamily: 'sans-serif',
+                                            fontWeight: '200',
+                                            lineHeight: '1.8em',
+                                            textTransform: 'uppercase',
+                                            }}>Chris ECommerce</h1>
+                                        <div style={{
+                                            display: 'grid',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                        }}>
+                                            <Button 
+                                            href='https://chrisecommerce.herokuapp.com/'
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            I want to see it!
+                                            </Button>
+                                            <Button
+                                            href='https://github.com/ChrisTHChan/E-Commerce-Website'
+                                            color="primary"
+                                            variant='contained'
+                                            style={{
+                                                margin: '10px',
+                                            }}>
+                                            Show me the code!
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </Slide>
                                 <Slide right>
                                     <div>
                                         <h1 style={{
