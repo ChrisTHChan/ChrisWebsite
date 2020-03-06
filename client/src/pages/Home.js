@@ -29,7 +29,7 @@ class App extends Component {
   componentDidMount() {
     setInterval(() => {
       this.changeBackground()
-    }, 7000)
+    }, 4000)
   }
 
   generateNumber = () => {
@@ -165,82 +165,6 @@ class App extends Component {
               </Fade>
           </div>
           </div>
-          <div style={stockBackgroundStyles}>
-            <Fade duration="2000">
-              <div style={centeringDiv}>
-                <p style={whiteHomeTitleStyles}>Stock Viewer</p>
-                <p style={{
-                  color: 'white',
-                }}>
-                  StockViewer is exactly what it sounds like, it's a web application to assist you in your
-                  mission to scout for the best stock's for your portfolio! Search for stock tickers or names 
-                  of different companies you might be interested to look up their financial statsistics! Once you're 
-                  done looking at a stock, decide how much of that stock you want to add to your portfolio and any
-                  notes you want to jot down about it, and throw it in! Watch as your portfolio value rises, and use
-                  the filter bar to look for stock's you don't want anymore to remove them as well!
-                </p>
-                <p style={{
-                  color: 'white',
-                }}>
-                  This application was built HTML, CSS, JS, React, and AJAX.
-                </p>
-                <Button
-                  href='https://mrchrischan.github.io/StockViewer/'
-                  variant='contained'
-                  style={{
-                    margin: '10px',
-                  }}>
-                  I want to see it!
-                </Button>
-                <Button
-                  href='https://github.com/mrchrischan/StockViewer'
-                  variant='contained'
-                  style={{
-                    margin: '10px',
-                  }}>
-                  Show me the code!
-                </Button>
-              </div>
-              </Fade>
-          </div>
-          <div style={classroomBackgroundStyles}>
-          <div style={opacityScreenCenteringText}>
-            <Fade duration="2000">
-              <div style={centeringDiv}>
-                <p style={blackHomeTitleStyles}>Math Practice</p>
-                <p>Back in university and after university I used to tutor students for a bit of extra money to keep me along 
-                  (a side hustle if you will). Finding homework sheets and printing them for students was eventually
-                  proving itself to be a very costly task, both timewise and moneywise. I developed MathPractice
-                  to help streamline the process of homework distribution, as well as question production during
-                  tutoring sessions and classes for primary school students looking for math help! This app currently
-                  features 16 different modes involving basic math operations with numbers of varying digits. More 
-                  will be added soon!
-                </p>
-                <p>
-                  This application was created with HTML, CSS, JS, and React.
-                </p>
-                <Button
-                  href="https://mrchrischan.github.io/mathpracticereact/"
-                  color="primary"
-                  variant='contained'
-                  style={{
-                    margin: '10px',
-                  }}>
-                  I want to see it!
-                </Button>
-                <Button
-                  href="https://github.com/mrchrischan/mathpracticereact"
-                  color="primary"
-                  variant='contained'
-                  style={{
-                    margin: '10px',
-                  }}>
-                  Show me the code!
-                </Button>
-              </div>
-              </Fade>
-          </div>    
-          </div>
           <div style={storeBackgroundStyles}>
           <div style ={{
             backgroundColor: 'rgba(0,0,0,0.55)',
@@ -290,6 +214,82 @@ class App extends Component {
               </Fade>
           </div>
           </div>
+          <div style={stockBackgroundStyles}>
+            <Fade duration="2000">
+              <div style={centeringDiv}>
+                <p style={whiteHomeTitleStyles}>Stock Viewer</p>
+                <p style={{
+                  color: 'white',
+                }}>
+                  StockViewer is exactly what it sounds like, it's a web application to assist you in your
+                  mission to scout for the best stock's for your portfolio! Search for stock tickers or names 
+                  of different companies you might be interested to look up their financial statsistics! Once you're 
+                  done looking at a stock, decide how much of that stock you want to add to your portfolio and any
+                  notes you want to jot down about it, and throw it in! Watch as your portfolio value rises, and use
+                  the filter bar to look for stock's you don't want anymore to remove them as well!
+                </p>
+                <p style={{
+                  color: 'white',
+                }}>
+                  This application was built HTML, CSS, JS, React, and AJAX.
+                </p>
+                <Button
+                  href='https://chrisTHchan.github.io/StockViewer/'
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  I want to see it!
+                </Button>
+                <Button
+                  href='https://github.com/chrisTHchan/StockViewer'
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  Show me the code!
+                </Button>
+              </div>
+              </Fade>
+          </div>
+          <div style={classroomBackgroundStyles}>
+          <div style={opacityScreenCenteringText}>
+            <Fade duration="2000">
+              <div style={centeringDiv}>
+                <p style={blackHomeTitleStyles}>Math Practice</p>
+                <p>Back in university and after university I used to tutor students for a bit of extra money to keep me along 
+                  (a side hustle if you will). Finding homework sheets and printing them for students was eventually
+                  proving itself to be a very costly task, both timewise and moneywise. I developed MathPractice
+                  to help streamline the process of homework distribution, as well as question production during
+                  tutoring sessions and classes for primary school students looking for math help! This app currently
+                  features 16 different modes involving basic math operations with numbers of varying digits. More 
+                  will be added soon!
+                </p>
+                <p>
+                  This application was created with HTML, CSS, JS, and React.
+                </p>
+                <Button
+                  href="https://chrisTHchan.github.io/mathpracticereact/"
+                  color="primary"
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  I want to see it!
+                </Button>
+                <Button
+                  href="https://github.com/chrisTHchan/mathpracticereact"
+                  color="primary"
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  Show me the code!
+                </Button>
+              </div>
+              </Fade>
+          </div>    
+          </div>
           <div style={houseBackgroundStyles}>
           <div style={opacityScreenCenteringText}>
             <Fade duration="2000">
@@ -316,7 +316,7 @@ class App extends Component {
                   Site is coming soon!
                 </Button>
                 <Button
-                href="https://github.com/mrchrischan/Dream-Home"
+                href="https://github.com/chrisTHchan/Dream-Home"
                   color="primary"
                   variant='contained'
                   style={{
