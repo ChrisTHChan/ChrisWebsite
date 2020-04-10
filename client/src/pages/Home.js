@@ -7,6 +7,7 @@ import background3 from '../assets/background3.jpg'
 import background4 from '../assets/background4.jpg'
 import background5 from '../assets/background5.jpg'
 import background6 from '../assets/background6.jpg'
+import game from '../assets/game.jpeg'
 import coding from '../assets/coding.jpeg'
 import stocks from '../assets/stocks.jpg'
 import store from '../assets/store.jpg'
@@ -99,6 +100,9 @@ class App extends Component {
 
     const storeBackgroundStyles = {...backgroundImageStyles}
     storeBackgroundStyles.backgroundImage = `url(${store})`
+
+    const gameBackgroundStyles = {...backgroundImageStyles}
+    gameBackgroundStyles.backgroundImage = `url(${game})`
     
     const contactBackgroundStyles = {...backgroundImageStyles}
     contactBackgroundStyles.backgroundImage = `url(${contact})`
@@ -161,6 +165,56 @@ class App extends Component {
                 <p>
                   This site itself is powered by HTML, CSS, React, React-Router, React-Responsive and React-Reveal.
                 </p>
+              </div>
+              </Fade>
+          </div>
+          </div>
+          <div style={gameBackgroundStyles}>
+          <div style ={{
+            backgroundColor: 'rgba(0,0,0,0.55)',
+            height: '100vh',
+            width: '100vw',
+            maxWidth: '100%',
+            display: 'grid',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <Fade duration="2000">
+              <div style={centeringDiv}>
+                <p style={whiteHomeTitleStyles}>TFTCompBuilder</p>
+                <p style={{
+                  color: 'white',
+                }}>
+                  TFTCompBuilder is a web application tool to help you prepare for competitive settings for the
+                  popular auto chess game Teamfight Tactics. This tool allows you to create your own team compositions
+                  before going into a ranked game in order to allow you to more quickly figure out where you need to place
+                  your units, what units you need to pick up, and what items you ideally want to grab. It is a tool that prepares
+                  you to be more flexible in game which is what allows you to win more games! Furthermore, it allows you to save your 
+                  team compositions over multiple sessions with notes, which will help direct you in a game where you may have to use a composition
+                  that you are less familiar with. In the end, it is a tool that allows you to create compositions efficiently and with great detail,
+                  on top of being able to save it so you can view them later and at great speed during game to allow you to determine your courses of action faster. 
+                </p>
+                <p style={{
+                  color: 'white',
+                }}>
+                  This application was built using React.
+                </p>
+                <Button
+                  href='https://tftcompbuilder.herokuapp.com/'
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  I want to see it!
+                </Button>
+                <Button
+                  href='https://github.com/ChrisTHChan/tftbuilder'
+                  variant='contained'
+                  style={{
+                    margin: '10px',
+                  }}>
+                  Show me the code!
+                </Button>
               </div>
               </Fade>
           </div>
