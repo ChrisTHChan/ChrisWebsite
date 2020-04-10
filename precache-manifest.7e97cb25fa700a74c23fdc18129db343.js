@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41e5c849ca3920e7a216c233dcafe2aa",
+    "revision": "47b05be71115d5652d9db6bec2e1e417",
     "url": "/ChrisWebsite/index.html"
   },
   {
-    "revision": "1c5dbdf565a6f4f4b8dd",
+    "revision": "4129d5166b379461c572",
     "url": "/ChrisWebsite/static/css/main.ddd2cc19.chunk.css"
   },
   {
-    "revision": "05b636f8226895170ac8",
-    "url": "/ChrisWebsite/static/js/2.71bbd418.chunk.js"
+    "revision": "52f38dc988b2aa021d43",
+    "url": "/ChrisWebsite/static/js/2.1b6595c0.chunk.js"
   },
   {
-    "revision": "1c5dbdf565a6f4f4b8dd",
-    "url": "/ChrisWebsite/static/js/main.871917f4.chunk.js"
+    "revision": "4129d5166b379461c572",
+    "url": "/ChrisWebsite/static/js/main.9d26aab9.chunk.js"
   },
   {
     "revision": "3e2b89a50082ee808a44",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3efc5675a5c1eccf39d0f556e63c04c5",
     "url": "/ChrisWebsite/static/media/contact.3efc5675.jpg"
+  },
+  {
+    "revision": "7a78cc2a5ade6b9797bd93a78ccec14d",
+    "url": "/ChrisWebsite/static/media/game.7a78cc2a.jpeg"
   },
   {
     "revision": "c35e8b85f6575e1ad8d3220298420056",
